@@ -62,14 +62,14 @@ function Logout() {
   };
 
   return (
-    <div className="w-[4%] min-h-screen bg-slate-950 text-white flex flex-col items-center justify-end pb-6">
+    <div className="w-[4%] min-h-screen bg-gradient-to-b from-[#1a152e] to-[#251c3e] text-white flex flex-col items-center justify-end py-6 shadow-lg">
       <button
         onClick={handleLogout}
-        className="p-2 rounded-lg hover:bg-gray-700 transition duration-300 disabled:opacity-50"
+        className="p-3 rounded-xl hover:bg-purple-600 transition-all duration-300 disabled:opacity-50"
         aria-label="Logout"
         disabled={loading}
       >
-        <TbLogout2 className="text-3xl" />
+        <TbLogout2 className="text-3xl text-white" />
       </button>
     </div>
   );
